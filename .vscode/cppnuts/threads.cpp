@@ -53,7 +53,41 @@ using namespace std;
 
 // int main(){
 
-//     thread t((base()),10);
+//     thread t(base(),10);
 //     t.join();
 //     return 0;
 // }
+
+
+/*Mutex try lock*/
+
+#include<mutex>
+
+int counter  = 0;
+
+mutex m;
+
+void count(int x){
+
+    while (x-->0)
+    {   
+        // if(m.try_lock())
+        m.lock();
+        counter++;
+        m.unlock();
+    }
+    
+
+}
+int main(){
+
+
+     thread t1(count,1000000);
+     
+     thread t2(count,12121212);
+     t1.join();
+     t2.join();
+
+    cout<<"Result "<<counter;
+    return 0;
+}
