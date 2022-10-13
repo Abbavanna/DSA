@@ -3,6 +3,7 @@
 
 def main():
     """checks if theres enoug"""
+    print("try checkout")
 
 
 main()
