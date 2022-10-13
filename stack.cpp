@@ -3,7 +3,7 @@ using namespace std;
 
 //FUN FUN
 
-class none:().
+
 
 class stack{
 
@@ -117,7 +117,7 @@ int main(){
     
     do
     {
-        cout<<"\t0.Exit: "<<endl;
+       
         cout<<"\t1.Push "<<endl;
         cout<<"\t2.Pop "<<endl;
         cout<<"\t3.isEmpty"<<endl;
@@ -128,7 +128,6 @@ int main(){
         cout<<"\t8.display"<<endl;
         cout<<"\t9.Clear Screen"<<endl;
         cout<<"Choose an option: "<<endl;
-        
         cin>>choice;
         switch (choice)
         {
