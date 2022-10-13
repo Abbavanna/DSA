@@ -2,7 +2,7 @@
 
 
 def main():
-    pass
+    """checks if theres enoug"""
 
 
 main()
