@@ -2,7 +2,7 @@
 
 
 def main():
-    pass
+    print("try checkout")
 
 
 main()
